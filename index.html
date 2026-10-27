@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="Contenedor-form">
+        <form> 
+
+            <div class="title-form">
+                <h1>Title Form.</h1>
+            </div>
+
+           <div>
+                 <label for="nombre">Nombre</label>
+                 <input type="text" id="nombre" name="nombre">
+           </div>
+            
+           <div>
+                 <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" min="0">
+           </div>
+
+           <div class="btn">
+
+            <button>Sumbit</button>
+           </div>
+        </form>    
+
+
+      
+    </div>
+
+    <table id="tabla-productos">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <!-- Aquí es donde JavaScript inyectará las filas -->
+    <tbody id="cuerpo-tabla"></tbody>
+</table>
+
+</body>
+<script type="module" src="app.js"></script>
+</html>
